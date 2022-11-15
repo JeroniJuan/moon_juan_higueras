@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*HEADER*/
+
+body{
+    width:1440px;
+    height:auto;
+    background-color:wheat;
+    font-family:Roboto;
+}
+.flex{
+    display:flex;
+}
+
+header{
+    margin-top: 30px;
+    border:1px solid black;
+    width:1440px;
+    background-color: rgb(33, 32, 104);;
+}
+
+.header{
+    margin-left: 0px;
+    margin-top:15px;
+}
+
+.container1{
+    height:100px;
+    align-items: center;
+    margin-left:35%; 
+}
+
+header button{
+    font-size:15px;
+    height:80px;
+    width:150px;
+    align-items:center;
+    line-height: 80px; 
+    background-color:rgb(33, 32, 104);
+    border:1px solid transparent;
+    color:white;
+}
+header button:hover{
+    background-color: steelblue;
+}
+.marked{
+    background-color: slateblue;
+}
+@media screen {
+    
+}
+/*FOOTER*/
+footer{
+    height:20px;
+    background-color:rgb(33, 32, 104);
+    color:white;
+    align-items: center;
+}
+/*BODY INDEX*/
+
+.container2{
+    background-image: url(../img/moon.jpg);
+    background-size: contain;
+    width:1440px;
+    height:900px;
+}
+
+.container3{
+    border:1px solid rgb(0, 0, 255);
+    background-color: rgba(0, 183, 255, 0.445);
+    height:125px;
+    width:600px;
+    margin-left:30%;
+    margin-top:25%;
+    align-items: center;
+}
+
+.container3 h1{
+    font-size:25px;
+}
+
+.container3 button{
+    font-size:15px;
+    align-items:center; 
+    background-color:rgb(33, 32, 104);
+    border:1px solid transparent;
+    color:white;
+}
