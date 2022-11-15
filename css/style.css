@@ -45,8 +45,51 @@ header button:hover{
 .marked{
     background-color: slateblue;
 }
-@media screen {
+@media (max-width:400px){
+    body{
+        width:1440px;
+        height:auto;
+        background-color:wheat;
+        font-family:Roboto;
+    }
+    .flex{
+        display:flex;
+    }
     
+    header{
+        margin-top: 30px;
+        border:1px solid black;
+        width:1440px;
+        background-color: rgb(33, 32, 104);;
+    }
+    
+    .header{
+        margin-left: 0px;
+        margin-top:15px;
+    }
+    
+    .container1{
+        height:100px;
+        align-items: center;
+        margin-left:35%; 
+    }
+    
+    header button{
+        font-size:15px;
+        height:80px;
+        width:150px;
+        align-items:center;
+        line-height: 80px; 
+        background-color:rgb(33, 32, 104);
+        border:1px solid transparent;
+        color:white;
+    }
+    header button:hover{
+        background-color: steelblue;
+    }
+    .marked{
+        background-color: slateblue;
+    }
 }
 /*FOOTER*/
 footer{
