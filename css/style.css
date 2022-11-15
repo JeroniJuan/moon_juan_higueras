@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-/*HEADER*/
-
+/*JJH:Atributs del body i la font de les lletres*/
 body{
-    width:1440px;
+    margin-left:10%;
+    width:1360px;
     height:auto;
     background-color:wheat;
     font-family:Roboto;
 }
+/*HEADER*/
+/*JJH:Atributs de la capçelera de totes lés pàgines*/
 .flex{
     display:flex;
 }
@@ -14,30 +16,34 @@ body{
 header{
     margin-top: 30px;
     border:1px solid black;
-    width:1440px;
-    background-color: rgb(33, 32, 104);;
-}
-
-.header{
-    margin-left: 0px;
-    margin-top:15px;
+    width: 1360px;
+    background-color: rgb(33, 32, 104);
+    height:100px;
 }
 
 .container1{
     height:100px;
-    align-items: center;
     margin-left:35%; 
+    align-items: center;
 }
 
 header button{
     font-size:15px;
-    height:80px;
+    height:100px;
     width:150px;
     align-items:center;
-    line-height: 80px; 
+    line-height: 100px; 
     background-color:rgb(33, 32, 104);
     border:1px solid transparent;
     color:white;
+}
+header a{
+    text-decoration: none;
+    color:white;
+}
+header a:hover{
+    font-size:20px;
+    text-decoration:underline;
 }
 header button:hover{
     background-color: steelblue;
@@ -45,52 +51,36 @@ header button:hover{
 .marked{
     background-color: slateblue;
 }
-@media (max-width:400px){
-    body{
-        width:1440px;
-        height:auto;
-        background-color:wheat;
-        font-family:Roboto;
-    }
-    .flex{
-        display:flex;
-    }
-    
+/*JJH:El responsive del Header*/
+@media (max-width:400px){    
     header{
         margin-top: 30px;
         border:1px solid black;
-        width:1440px;
-        background-color: rgb(33, 32, 104);;
-    }
-    
-    .header{
-        margin-left: 0px;
-        margin-top:15px;
+        width:400px;
+        background-color: rgb(33, 32, 104);
+        flex-wrap: wrap;
+        height:300px;
     }
     
     .container1{
         height:100px;
         align-items: center;
         margin-left:35%; 
+        flex-flow:row;
     }
     
     header button{
         font-size:15px;
-        height:80px;
-        width:150px;
+        width:100%;
+        height:100px;
         align-items:center;
         line-height: 80px; 
         background-color:rgb(33, 32, 104);
         border:1px solid transparent;
         color:white;
     }
-    header button:hover{
-        background-color: steelblue;
-    }
-    .marked{
-        background-color: slateblue;
-    }
 }
+
 /*FOOTER*/
 footer{
     height:20px;
@@ -98,12 +88,12 @@ footer{
     color:white;
     align-items: center;
 }
-/*BODY INDEX*/
+/*PÀGINA INDEX*/
 
 .container2{
     background-image: url(../img/moon.jpg);
     background-size: contain;
-    width:1440px;
+    width:1360px;
     height:900px;
 }
 
@@ -127,4 +117,85 @@ footer{
     background-color:rgb(33, 32, 104);
     border:1px solid transparent;
     color:white;
+}
+
+/*PÀGINA GALERIA*/
+.container4{
+    background-image: url(../img/moon.jpg);
+    background-size: contain;
+    width:1360px;
+    height:900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.moon{
+    width: 400px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.m1{
+    background-image: url(../img/moon1.jpg);
+}
+
+.m2{
+    background-image: url(../img/moon2.jpg);
+}
+
+.m3{
+    background-image: url(../img/moon3.jpg);
+}
+
+.m4{
+    background-image: url(../img/moon4.jpg);
+}
+
+.m5{
+    background-image: url(../img/moon5.jpg);
+}
+
+.m6{
+    background-image: url(../img/moon6.jpg);
+}
+
+.m7{
+    background-image: url(../img/moon7.jpg);
+}
+
+.m8{
+    background-image: url(../img/moon8.jpg);
+}
+
+.m9{
+    background-image: url(../img/moon9.jpg);
+}
+
+/*PÀGINA RESERVA*/
+.container7{
+    background-image: url(../img/moon.jpg);
+    background-size: contain;
+    width:1360px;
+    height:900px;
+}
+
+.container8{
+    border:1px solid rgb(0, 0, 255);
+    background-color: rgba(0, 183, 255, 0.445);
+    height:300px;
+    width:500px;
+    margin-left:35%;
+    margin-top:20%;
+    align-items: center;
+}
+
+.container8 form div{
+    padding:10px;
+}
+
+.container8 form input{
+    border:3px solid black;
+    border-radius:9px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,42 @@
     <title>Reserva</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!--JJH:Header amb flex per anar a les diferents pàgines-->
 <body>
     <header>
         <container class="flex container1">
-                <a href="index.html"><button class="header">Home</a>
-                <a href="galeria.html"><button class="header">Galeria</a>
-                <a href="reserva.html"><button class="header marked">Reserva</a>
+            <a href="index.html"><button class="header">Home</a>
+            <a href="galeria.html"><button class="header">Galeria</a>
+            <a href="reserva.html"><button class="header marked">Reserva</a>
         </container>
     </header>
+<!--JJH:Container del cos de la pàgina-->
+    <container class="flex container7">
+        <!--JJH:Container on està el form-->
+        <container class="container8">
+            <h1>Reserva el teu viatge a la lluna</h1>
+            <form action="GET">
+                <div>
+                    <label>Passatgers:</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Data sortida:</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Data tornada:</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </container>
+    </container>
+<!--JJH:Footer amb informació de la ubicació-->
     <footer class="flex">Carrer cabana 31, 67141 Es pont d'inca</footer>
 </body>
+
 </html>
